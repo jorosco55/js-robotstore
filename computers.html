@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <title>Mr Robot!</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />\
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
   <link rel="stylesheet" type="text/css" href="robot.css">
   </head>
   <body>
     <header>
+        <img src="images/logo.jpg" class="headerlogo"/>
+        <span id="headername">Mr. Robot</span>
+        <input type="search" class="searchbox" placeholder="Search our store" />
+
+       <div>
         <nav class="backgroundgradient">
             <ul>
                 <li><a class="navlink" href="index.html">Home</a></li>
@@ -14,35 +20,26 @@
                 <li><a class="navlink" href="computers.html">Hardware</a></li>
                 <li><a class="navlink" href="contact.html">Contact</a></li>
                 <li><a class="navlink" href="about.html">About</a></li>
-                <span id="headername">Mr. Robot</span>
-                <input type="search" class="searchbox" placeholder="Search our store" />
+
             </ul>
+
         </nav>
-
-        <div>
-            <a class="headerlogo" href="index.html">
-                <img src="images/logo.jpg" />
-            </a>
-
-
-        </div>
-
-
+       </div>
     </header>
 
     <form>
-      <fieldset>
+      <fieldset class="field">
         <legend>Select a CPU</legend>
         <p><label for="i3"><input type="radio" name="CPU" id="i3">Intel i3</label></p>
         <p><label for="i4"><input type="radio" name="CPU" id="i4"></label>Intel i4</p>
         <p><label for="i7"><input type="radio" name="CPU" id="i7"></label>Intel i7</p>
       </fieldset>
-  <fieldset>
+  <fieldset class="field">
     <legend>Select Ram</legend>
     <p><label for="8"><input type="radio" name="ram" id="8">8gig</label></p>
     <p><label for="16"><input type="radio" name="ram" id="16">16gig</label></p>
   </fieldset>
-    <fieldset>
+    <fieldset class="field">
       <legend></legend>
 
       <p><label for="vrh"><input type="checkbox" name="" id="vrh">Virtual Reality Helmet</label></p>
@@ -55,7 +52,7 @@
 </form>
 <footer>
   <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
-  <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
+  <p class="textcontent">&copy; 2017 <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
   <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
 </footer>
 
@@ -89,4 +86,7 @@
       }
     </script>
   </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </html>

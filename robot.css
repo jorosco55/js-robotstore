@@ -1,19 +1,103 @@
 body {
     background-color: lightgoldenrodyellow;
+    font-size: 14px;
+}
+
+.headerlogo  {
+    display: inline;
+    margin: 0px;
+    width: 150px;
+    height: 150px;
+    padding: 2px;
+    border: 0px;
+}
+
+
+
+#coffeeofthemonth {
+    text-align: center;
+    display: block;
+    margin:50px;
+    width: 300px;
+    padding: 2px;
+    border: 0px;
+    float: right;
 
 }
 
-.headerlogo img {
-    margin-top:20px;
-    margin-right:20px;
+#myInput {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: orangered;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: coral;
+}
+
+
+#pimage.productarticlelargeimage {
+
+
+}
+
+#welcomeimage {
+
+
+}
+
+
+.backgroundgradient {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2px;
+
 
 }
 
 .backgroundgradient ul li {
     display: inline;
-    margin: 20px;
-    padding: 20px;
+    height: 35px;
+    margin: 25px 25px 25px 25px;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+    padding: 5px 5px 5px 5px;
+    background-color: orangered;
+
 }
+
+.backgroundgradient ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    display: block;
+    maargin: 10px;
+    padding: 0px;
+}
+
 
 #headername {
     color: navy ;
@@ -21,13 +105,105 @@ body {
     text-emphasis-color: orangered;
     font-family: Impact;
     font-family: "Arial Black";
+    margin-right: 0px;
+    margin-top: 0px;
+    padding: 5px;
 }
 
 .searchbox {
     background-color: darkorange;
     text-decoration-color: navy;
+    width:500px;
+    margin:10px ;
+    float:right;
+    top:-20px;
+}
+
+a:link {
+    color: chartreuse;
+
+}
+
+a:visited {
+    color: darkmagenta;
+}
+
+a:hover {
+    color: deeppink;
+}
+
+p mark {
+    background-color: chartreuse;
+    color: orangered;
+}
+
+footer {
+
+    border: 0px;
+    margin: 0px;
+    height: 20px;
+    clear: both;
+    border-radius: 5px;
+    color: coral;
+    text-align: center;
+    padding: 0px;
+    font-size: 9px;
 }
 
 
+footer address {
+    text-align: center;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 9px;
+
+}
+
+p.smalltext {
+    font-size: 7.5px;
+    margin: 0px;
+}
+
+#wrap {
+    width: 600px;
+    margin: 60px;
+    }
+
+#leftcol {
+    float: left;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#rightcol {
+    float: right;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
 
 
+#welcometext {
+    padding-top: 10px;
+}
+
+#address {
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+
+.textcontent {
+    margin-bottom: 0px;
+}
+
+.field {
+    border-style: none;
+    text-align: inherit;
+    margin-left: 20px;
+    font-size: medium;
+    font-style: oblique;
+    font-family: sans-serif;
+}

@@ -58,9 +58,8 @@ body {
 }
 
 
-#pimage.productarticlelargeimage {
-
-
+.productarticlelargeimage {
+    width: 200px;
 }
 
 #welcomeimage {

@@ -3,6 +3,9 @@
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <title>Mr Robot!</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
   <link rel="stylesheet" type="text/css" href="robot.css">
   <script src="robot.js"></script>
@@ -28,27 +31,43 @@
        </div>
     </header>
 
-    <form>
+
       <fieldset class="field">
+        <div id="legendRam">
         <legend>Select a CPU</legend>
+        </div>
+
+        <div id="inputCPU">
         <p><label for="i3"><input type="radio" name="CPU" id="i3">Intel i3</label></p>
-        <p><label for="i4"><input type="radio" name="CPU" id="i4"></label>Intel i4</p>
-        <p><label for="i7"><input type="radio" name="CPU" id="i7"></label>Intel i7</p>
+        <p><label for="i4"><input type="radio" name="CPU" id="i4">Intel i4</label></p>
+        <p><label for="i7"><input type="radio" name="CPU" id="i7">Intel i7</label></p>
+        </div>
       </fieldset>
+
   <fieldset class="field">
+
+    <div id="legendRam">
     <legend>Select Ram</legend>
+    </div>
+
+     <div id="inputCPU">
     <p><label for="8"><input type="radio" name="ram" id="8">8gig</label></p>
     <p><label for="16"><input type="radio" name="ram" id="16">16gig</label></p>
+     </div>
   </fieldset>
+
     <fieldset class="field">
       <legend></legend>
 
+      <div id="inputCPU">
       <p><label for="vrh"><input type="checkbox" name="" id="vrh">Virtual Reality Helmet</label></p>
       <p><label for="3ds"><input type="checkbox" name="" id="3ds">3D Screen</label></p>
       <p><label for="ss"><input type="checkbox" name="" id="ss">Stereo Speakers</label></p>
+      </div>
     </fieldset>
+
   <p>
-    <button>Submit</button>
+    <button id="btnSendInfo" class="submitbutton">Submit</button>
   </p>
 </form>
 <footer>
@@ -58,36 +77,6 @@
 </footer>
 
 
-    <script>
-      /* TODO: Move To js file */
-      /*********************************************************
-       *
-       *   Test Checkboxes/Radio Buttons Script
-       *
-       *********************************************************/
-       // loop through each form and handle submit event
-       for (var i=0;i<document.forms.length;i++) {
-         var form = document.forms[i];
-         form.addEventListener('submit', function(e){
-           e.preventDefault();
-           var results = '';
-          // loop through all checkboxes to see if checked
-          var checkboxes = form.querySelectorAll("input[type='checkbox']");
-          for(var k = 0; k < checkboxes.length; k++) {
-            results += checkboxes[k].id + '=' + checkboxes[k].checked + '\n';
-          }
-          // loop through all radio butotns to display value
-          var radiobuttons = form.querySelectorAll("input[type='radio']:checked");
-          for(var m = 0; m < radiobuttons.length; m++) {
-            results += radiobuttons[m].name + '=' + radiobuttons[m].value + '\n';
-          }
-          // alert results
-          alert(results);
-        });
-      }
-    </script>
-  </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+ </body>
+
 </html>

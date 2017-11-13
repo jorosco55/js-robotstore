@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <title>Mr Robot!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
@@ -30,10 +33,11 @@
 
     </header>
 
-    <div id="welcomeimage">
-      <img src="images/Mr.-Robot-Welcome.png" height="400px" alt="About us">
-    </div>
-<form id="contactForm">
+  <div id="robotWelcome">
+  <img src="images/Mr.-Robot-Welcome.png" height="400px" alt="About us">
+  </div>
+<form class="contactForm">
+
   <fieldset class="field">
     <div>
     <legend>Enter your Contact info below:</legend>
@@ -51,7 +55,7 @@
     </select>
 </p>
 <p><label for="quest">Your Question</label><br>
-  <textarea name="quest" id="" cols="50" rows="10" maxlength="500"></textarea></p>
+  <textarea name="quest" id="" cols="75" rows="10" maxlength="500"></textarea></p>
 </div>
 
 </fieldset>
@@ -59,6 +63,7 @@
   <button id="btnSendInfo" class="submitbutton">Send Info</button>
   </p>
 </form>
+
 <footer>
   <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
   <p class="textcontent">&copy; 2017 <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
@@ -66,7 +71,5 @@
 </footer>
 
   </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 </html>

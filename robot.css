@@ -1,7 +1,32 @@
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: lightgrey;
     font-size: 14px;
+
 }
+
+legend {
+    padding: 5px;
+    margin: 10px;
+    color: orangered;
+    font-family: Tahoma;
+    font-size: 250%;
+    font-weight: bold;
+
+}
+
+#history {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+#robotWelcome{
+    padding: 5px;
+
+    margin: 5px;
+
+    text-align: center;
+}
+
 
 .headerlogo  {
     display: inline;
@@ -10,6 +35,10 @@ body {
     height: 150px;
     padding: 2px;
     border: 0px;
+    padding: 5px;
+    border: black 2px solid;
+    margin: 10px;
+    background-color: tomato;
 }
 
 
@@ -17,8 +46,8 @@ body {
 #coffeeofthemonth {
     text-align: center;
     display: block;
-    margin:50px;
-    width: 300px;
+    margin: 5px;
+    width: 200px;
     padding: 2px;
     border: 0px;
     float: right;
@@ -63,16 +92,28 @@ body {
 }
 
 #welcomeimage {
-
+    display: block;
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    border: black 2px solid;
+    margin: 25px;
+    background-color: coral;
 
 }
 
 
+
 .backgroundgradient {
-    display: inline;
+    font-size: 25px;
+    height: 50px;
+    background-color: orangered;
+    font-weight: bold;
     flex-direction: row;
     justify-content: space-around;
     padding: 2px;
+    margin-bottom: 5px;
+
 
 
 }
@@ -85,32 +126,56 @@ body {
     justify-content: center;
     font-size: 14px;
     padding: 5px 5px 5px 5px;
-    background-color: orangered;
+    vertical-align: middle;
 
 }
 
 .backgroundgradient ul {
-    margin-left: 0px;
-    padding-left: 0px;
+    margin: 0px;
+    list-style-type: none;
     display: block;
-    maargin: 10px;
     padding: 0px;
+
 }
 
+.backgroundgradient a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    vertical-align: middle;
+}
+
+.backgroundgradient a:hover {
+    color: black;
+    background-color: white;
+}
+
+.navlink {
+    background: #e7e7e7;
+    border: 1px solid;
+    border-radius: 3px;
+    font: 700 14px Helvetica, Arial;
+    height: 300px;
+    line-height: 28px;
+    padding: 0 20px;
+    text-align: center;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
 
 #headername {
-    color: navy ;
-    font-size: 16px;
-    text-emphasis-color: orangered;
-    font-family: Impact;
-    font-family: "Arial Black";
+    color: orangered;
+    font-size: 300%;
+    font-family: Georgia;
+    font-weight: bold;
     margin-right: 0px;
     margin-top: 0px;
     padding: 5px;
+
 }
 
 .searchbox {
-    background-color: darkorange;
+    background-color: coral;
     text-decoration-color: navy;
     width:500px;
     margin:10px ;
@@ -119,28 +184,41 @@ body {
 }
 
 a:link {
-    color: chartreuse;
+    color: black;
 
 }
 
 a:visited {
-    color: darkmagenta;
+    color: red;
 }
 
 a:hover {
-    color: deeppink;
+    color: lightgrey;
+    cursor: hand;
 }
 
 p mark {
     background-color: chartreuse;
     color: orangered;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer, footer address, p.samlltext {
+    cursor: zoom-in;
+}
+
+p #address {
+    padding: 5px;
 }
 
 footer {
 
     border: 0px;
     margin: 0px;
-    height: 20px;
+    height: 10px;
     clear: both;
     border-radius: 5px;
     color: coral;
@@ -157,36 +235,51 @@ footer address {
     padding: 0px;
     font-size: 9px;
 
+
 }
 
 p.smalltext {
     font-size: 7.5px;
     margin: 0px;
+
 }
 
 #wrap {
-    width: 600px;
-    margin: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
     }
 
 #leftcol {
     float: left;
-    width: 300px;
-    padding: 20px;
+    width: 50%;
+    height: 350px;
+    padding: 10px;
     text-align: center;
+    cursor: pointer;
+}
 
+#leftcol::first-letter {
+    font-weight: bold;
+    font-size: 24px;
 }
 
 #rightcol {
     float: right;
-    width: 300px;
-    padding: 20px;
+    width: 50%;
+    height: 350px;
+    padding: 10px;
     text-align: center;
+    cursor: pointer;
+
 }
 
 
 #welcometext {
     padding-top: 10px;
+    margin-bottom: 0px;
+
+
 }
 
 #address {
@@ -199,10 +292,48 @@ p.smalltext {
 }
 
 .field {
+    display: table-row;
     border-style: none;
     text-align: inherit;
     margin-left: 20px;
     font-size: medium;
     font-style: oblique;
     font-family: sans-serif;
+}
+
+.field label {
+    display: table-cell;
+    padding: 2px;
+}
+
+.field input {
+    display: table-cell;
+    padding: 2px;
+}
+
+#contactForm {
+    color: white;
+    display: table;
+    padding: 15px;
+    background-color: coral;
+    border: solid 2px black;
+    width: 800px;
+    margin-top:10px;
+    margin-bottom: 5px;
+    margin-left: 15%;
+    margin-right: 25%;
+
+}
+
+#legendRam {
+    font-size: 100%;
+}
+
+#inputCPU {
+    cursor: pointer;
+}
+
+.submitbutton {
+    cursor: pointer;
+
 }

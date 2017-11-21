@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <title>Mr Robot!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
   <link rel="stylesheet" type="text/css" href="robot.css">
-  <script src="robot.js"></script>
+
   </head>
-<body>
+<body class="container">
   <header>
       <img src="images/logo.jpg" class="headerlogo"/>
       <span id="headername">Mr. Robot</span>
@@ -36,7 +37,7 @@
 <legend>Mr. Robot's Top Robot Models</legend>
 
 
-  <input type="text" id="myInput" placeholder="Search for names...">
+  <input autocomplete="on" type="text" id="myInput" placeholder="Search for names...">
 
 
      <ul id="myUL">
@@ -99,28 +100,26 @@
              <div>Address</div>
      </template>
 </template>
-<script>
-  var robo = document.querySelector('#robo1').createShadowRoot();
-  /*Step1*/
-  let prdTemplate = document.querySelector('#producttemplate');
-  /*Step2*/
-  let clone = document.importNode(prdTemplate.content, true);
-  /*Step3*/
 
-  clone.querySelector('#pimage').src = 'images/roboDog.png';
-  clone.querySelector('#lblName').textContent = 'R.E.T';
-
- /*Step4*/
-  robo.appendChild(clone);
-  let userTemplate = document.querySelector('#user');
-  let userClone = document.importNode(userTemplate.content, true);
-  document.body.appendChild(userClone);
-    let addressTemplate = document.querySelector('#address');
-    let addressClone = document.importNode(addressTemplate.content, true);
-  document.body.appendChild(addressClone);
-</script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <script>
+      $(document).ready(function() {
+          $("#myInput").autocomplete({source: ["R.E.T.", "Butler.Bot"]});
+
+      });
+
+  </script>
+
+
 </body>
+
 </html>
+
+
+
+
+
+
